@@ -1,0 +1,777 @@
+<!doctype html>
+<html>
+	<head>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, minimal-ui">
+
+	<title>Iñaki Abete - Senior Software Engineer</title>
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.2.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/octicons/2.0.2/octicons.min.css">
+
+	<style type="text/css">
+	@import url(
+	https://fonts.googleapis.com/css?family=Lato:300,400,700
+);
+body {
+	background: #fff;
+	font-family: Lato, sans-serif;
+	font-weight: 300;
+	color: #333;
+	margin: 0 0 80px;
+	font-size: 15px;
+}
+a {
+	color: #E32B46;
+}
+a:focus,
+a:hover {
+	color: #333;
+	text-decoration: none;
+}
+strong {
+	font-size: smaller;
+	font-weight: 400;
+	color: #333;
+	text-transform: uppercase;
+}
+p {
+	line-height: 1.5;
+	margin: 0 0 .5em 0;
+}
+p + p {
+	margin-top: 10px;
+}
+h1,
+h2,
+h3,
+h4 {
+	margin-top: 0;
+	font-weight: 300;
+	color: #555;
+}
+section {
+	margin-top: 15px;
+}
+ul, ol {
+	padding-left: 21px;
+}
+li {
+	line-height: 1.8;
+	list-style: none;
+}
+li:before {
+	content: "\f052";
+	float: left;
+	font: 16px Octicons;
+	margin-top: 6px;
+	margin-left: -20px;
+	opacity: .1;
+	position: absolute;
+}
+blockquote {
+	border-left: 5px solid #e7e9ec;
+	font-size: 14px;
+}
+em {
+	color: #666;
+	font-weight: 300;
+	font-style: normal;
+}
+h4 span:first-child {
+	color: #333;
+	font-weight: 400;
+}
+.container {
+	max-width: 750px;
+	padding: 0 30px;
+}
+.col-sm-6 {
+	margin-bottom: 10px;
+}
+.col-sm-12 h4 {
+	margin-top: 12px;
+}
+.col-sm-12 + .col-sm-12 {
+	margin-top: 30px;
+}
+#header {
+	padding: 50px 0 25px;
+	/*margin-bottom: 25px;*/
+}
+#header h2 {
+	color: #95a5a6;
+	font-size: 24px;
+}
+#content h3 {
+	color: #555;
+	font-size: 26px;
+	margin-top: -4px;
+}
+#content aside {
+	text-align: right;
+	padding-right: 30px;
+}
+#profiles .network {
+	text-transform: capitalize;
+}
+#work .position,
+#volunteer .position {
+	font-weight: 400;
+	margin-bottom: 8px;
+}
+#education .area {
+	font-weight: 400;
+}
+#education .area:before {
+	content: "\f0d7";
+	font: 16px Octicons;
+	margin-right: 6px;
+}
+#education .studyType {
+	margin-left: 25px;
+}
+#awards .summary,
+#publications .summary {
+	margin-top: 8px;
+}
+#publications .website a:before {
+	content: attr(href);
+}
+
+@media (min-width: 480px) {
+	.strike-through {
+		border-top: 1px solid #f4f6f6;
+		height: 20px;
+		margin-top: 12px;
+		margin-bottom: -2px;
+		position: relative;
+	}
+	.strike-through span,
+	.strike-through a {
+		background: #fff;
+		position: absolute;
+	}
+	.strike-through span:first-child {
+		padding-right: 20px;
+		margin-top: -12px;
+	}
+	.strike-through span + span {
+		font-size: 14px;
+		margin-top: -10px;
+		padding-left: 20px;
+		right: 0;
+	}
+}
+@media (max-width: 768px) {
+	.col-sm-6:last-child {
+		margin-bottom: 0px;
+	}
+	#content aside {
+		margin-bottom: 20px;
+		padding-right: 0;
+		text-align: left;
+	}
+	#publications .website a:before {
+		content: "View publication";
+	}
+}
+@media (max-width: 480px) {
+	h1 {
+		font-size: 28px;
+	}
+	#header h2 {
+		font-size: 24px;
+	}
+	#content h3 {
+		font-size: 20px;
+	}
+	h4 {
+		font-size: 16px;
+	}
+	.date {
+		font-size: 14px;
+		margin-bottom: 5px;
+	}
+	.strike-through span:first-child {
+		margin-bottom: 7px;
+	}
+	.strike-through span {
+		display: block;
+	}
+	#header {
+		/*margin-bottom: 10px;*/
+		padding: 30px 0 0;
+	}
+	#actions {
+		display: none;
+	}
+}
+
+@media print {
+	body {
+		font-size: 12px;
+	}
+	a[href]:after {
+		display: none;
+	}
+	h1 {
+		font-size: 24px;
+	}
+	#header h2 {
+		font-size: 18px;
+		margin-top: -8px;
+	}
+	h4 {
+		font-size: 13px;
+	}
+  #header {
+		padding: 0;
+	}
+
+	#content aside {
+		margin: 0 !important;
+	}
+
+	#content h3 {
+		font-size: 16px;
+		margin-top: 0;
+	}
+
+	blockquote {
+		border: 0;
+		border-left: 3px solid #e7e9ec;
+		font-size: 12px;
+	}
+
+	li:before {
+		font: 10px Octicons;
+	}
+
+	.strike-through {
+		border-top-color: transparent;
+	}
+	.strike-through span + span {
+		font-size: 12px;
+	}
+	.col-sm-push-3 {
+    left: 25%;
+	}
+	.col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {
+  float: left;
+	}
+	.col-sm-12 {
+	  width: 100%;
+	}
+	.col-sm-11 {
+	  width: 91.66666666666666%;
+	}
+	.col-sm-10 {
+	  width: 83.33333333333334%;
+	}
+	.col-sm-9 {
+	  width: 75%;
+	}
+	.col-sm-8 {
+	  width: 66.66666666666666%;
+	}
+	.col-sm-7 {
+	  width: 58.333333333333336%;
+	}
+	.col-sm-6 {
+	  width: 50%;
+	}
+	.col-sm-5 {
+	  width: 41.66666666666667%;
+	}
+	.col-sm-4 {
+	  width: 33.33333333333333%;
+	 }
+	 .col-sm-3 {
+	   width: 25%;
+	 }
+	 .col-sm-2 {
+	   width: 16.666666666666664%;
+	 }
+	 .col-sm-1 {
+	  width: 8.333333333333332%;
+	 }
+}
+
+	</style>
+
+	</head>
+	<body>
+
+	<header id="header">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-9 col-sm-push-3">
+					<h1>
+						Iñaki Abete
+					</h1>
+					<h2>
+						Senior Software Engineer
+					</h2>
+				</div>
+			</div>
+		</div>
+	</header>
+	<div id="content" class="container">
+
+	<section id="contact" class="row">
+		<aside class="col-sm-3">
+			<h3>Contact</h3>
+		</aside>
+		<div class="col-sm-9">
+			<div class="row">
+			<div class="col-sm-6">
+				<strong>Email</strong>
+				<div class="email">inakiabt@gmail.com</div>
+			</div>
+			<div class="col-sm-6">
+				<strong>Phone</strong>
+				<div class="phone">+5492234388094</div>
+			</div>
+			<div class="col-sm-6">
+				<strong>Website</strong>
+				<div class="website">
+					<a href=""></a>
+				</div>
+			</div>
+			</div>
+		</div>
+	</section>
+	<section id="about" class="row">
+		<aside class="col-sm-3">
+			<h3>About</h3>
+		</aside>
+		<div class="col-sm-9">
+			<p>I am a Senior Software Engineer, with experience in both mobile &amp; web developments, having Backend and Systems Architecture as my core area of expertise.   Along the past years, the projects I have been involved with used a wide gamma of technologies such as Java, Node, PHP, React, React Native, Amazon Web Services in between others.  I had the chance to lead small to big Dev Teams, having acquire the needed skills to manage successful productive teams.</p>
+		</div>
+	</section>
+	<section id="profiles" class="row">
+		<aside class="col-sm-3">
+			<h3>Profiles</h3>
+		</aside>
+		<div class="col-sm-9">
+			<div class="row">
+				<div class="col-sm-6">
+					<strong class="network">
+						Github
+					</strong>
+					<div class="username">
+						<div class="url">
+							<a href="https://github.com/inakiabt">inakiabt</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-6">
+					<strong class="network">
+						StackOverflow
+					</strong>
+					<div class="username">
+						<div class="url">
+							<a href="https://stackoverflow.com/users/139545/inakiabt">inakiabt</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-6">
+					<strong class="network">
+						Twitter
+					</strong>
+					<div class="username">
+						<div class="url">
+							<a href="https://twitter.com/inakiabt">inakiabt</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="work" class="row">
+		<aside class="col-sm-3">
+			<h3>Work</h3>
+		</aside>
+		<div class="col-sm-9">
+			<div class="row">
+			<div class="col-sm-12">
+				<h4 class="strike-through">
+					<span>Gone</span>
+					<span class="date">
+						August 2013 — March 2017
+					</span>
+				</h4>
+				<div class="website pull-right">
+					<a href="http://thegoneapp.com/">http://thegoneapp.com/</a>
+				</div>
+				<div class="position">
+					CTO &amp; Co-founder
+				</div>
+				<div class="summary">
+					<p>Gone offers you the most value for electronics and gadgets you no longer use without the hassles of pricing, listing, or shipping. Main technologies used: Node, PHP, Docker, Titanium Appcelerator, Parse, React, React Native, Jenkins, Python, Django, NoSQL databases (AWS DynamoDB, MongoDB, Titan), MySQL, PostgreSQL, AWS (EC2, SQS, SNS, Lambda, ECS, RDS, CloudWatch, S3, Kinesis, OpsWorks, Redshift,  Route 53, Elasticache, Cloudfront).</p>
+				</div>
+				<p>
+					<strong>Highlights</strong>
+				</p>
+				<ul class="highlights">
+					<li class="bullet">Integration with several third-parties systems</li>
+					<li class="bullet">Mobile Development</li>
+					<li class="bullet">System Architecture</li>
+					<li class="bullet">DevOps</li>
+				</ul>
+			</div>
+			<div class="col-sm-12">
+				<h4 class="strike-through">
+					<span>Techstars</span>
+					<span class="date">
+						July 2013 — September 2013
+					</span>
+				</h4>
+				<div class="website pull-right">
+					<a href=""></a>
+				</div>
+				<div class="position">
+					Alumni
+				</div>
+				<div class="summary">
+					<p>Gone (former ProductGram) was privileged to be selected as one of 10 teams to participate in Techstars Accelerator Class of 2013</p>
+				</div>
+				<p>
+					<strong>Highlights</strong>
+				</p>
+				<ul class="highlights">
+					<li class="bullet">Techstars is the world&#39;s leading startup accelerator, accepting fewer that 1% of applicants.</li>
+				</ul>
+			</div>
+			<div class="col-sm-12">
+				<h4 class="strike-through">
+					<span>NXTP Labs</span>
+					<span class="date">
+						February 2013 — May 2013
+					</span>
+				</h4>
+				<div class="website pull-right">
+					<a href=""></a>
+				</div>
+				<div class="position">
+					Alumni
+				</div>
+				<div class="summary">
+					<p>ProductGram was selected to be part of the NXTP Labs Class of 2013.</p>
+				</div>
+			</div>
+			<div class="col-sm-12">
+				<h4 class="strike-through">
+					<span>ProductGram</span>
+					<span class="date">
+						February 2013 — August 2013
+					</span>
+				</h4>
+				<div class="website pull-right">
+					<a href=""></a>
+				</div>
+				<div class="position">
+					CTO &amp; Co-founder
+				</div>
+				<div class="summary">
+					<p>ProductGram is an app to help users to sell and buy items through social networks (Facebook, Twitter, Instagram). In charge of design, develop and deploy the system from scratch running on AWS. Developing and publishing the mobile app. Also, several integrations with several APIs like: Facebook, Twitter, Paypal and Etsy. Main technologies used: PHP, Titanium Appcelerator, MySQL, Stackmob, AWS (DynamoDB, SNS, SQS, EC2, S3, Opsworks).</p>
+				</div>
+				<p>
+					<strong>Highlights</strong>
+				</p>
+				<ul class="highlights">
+					<li class="bullet">Mobile Development</li>
+					<li class="bullet">Web Development</li>
+					<li class="bullet">System Architecture</li>
+					<li class="bullet">DevOps</li>
+				</ul>
+			</div>
+			<div class="col-sm-12">
+				<h4 class="strike-through">
+					<span>DevSpark</span>
+					<span class="date">
+						July 2011 — February 2013
+					</span>
+				</h4>
+				<div class="website pull-right">
+					<a href=""></a>
+				</div>
+				<div class="position">
+					Technical Lead
+				</div>
+				<div class="summary">
+					<p>Technical leader of the frontend team. Helped to build an internal management dashboard from scratch using ExtJS/Sencha for a video transcoding company. Main technologies used: Java, ExtJS/Sencha.</p>
+				</div>
+				<p>
+					<strong>Highlights</strong>
+				</p>
+				<ul class="highlights">
+					<li class="bullet">Web Development</li>
+				</ul>
+			</div>
+			<div class="col-sm-12">
+				<h4 class="strike-through">
+					<span>DevSpark</span>
+					<span class="date">
+						July 2011 — November 2011
+					</span>
+				</h4>
+				<div class="website pull-right">
+					<a href=""></a>
+				</div>
+				<div class="position">
+					DevOps
+				</div>
+				<div class="summary">
+					<p>In charge of deploying and setup distributed systems on AWS. Custom tools for ingestion workflows adding output validation at large scale. Main technologies used: Java, SQLite, PHP, AWS (EC2, SQS, RDS)</p>
+				</div>
+			</div>
+			<div class="col-sm-12">
+				<h4 class="strike-through">
+					<span>Panvidea</span>
+					<span class="date">
+						December 2008 — July 2011
+					</span>
+				</h4>
+				<div class="website pull-right">
+					<a href=""></a>
+				</div>
+				<div class="position">
+					DevOps
+				</div>
+				<div class="summary">
+					<p>In charge of building deployment tools to deploy and integrate testing, staging and production environments on AWS. Setup of Jenkins (CI) and automatic deployments (CD). Custom ingestion and delivery workflows tools for several clients. Main technologies used: Java, Spring, Tomcat, AWS (EC2, SQS, SNS, S3, RDS), Rightscale, MySQL, Riak, Jenkins.</p>
+				</div>
+			</div>
+			<div class="col-sm-12">
+				<h4 class="strike-through">
+					<span>Panvidea</span>
+					<span class="date">
+						December 2007 — July 2009
+					</span>
+				</h4>
+				<div class="website pull-right">
+					<a href=""></a>
+				</div>
+				<div class="position">
+					Software Engineer
+				</div>
+				<div class="summary">
+					<p>Part of the core team in charge of design and architect the Panvidea&#39;s platform from scratch. Develop several distributed components using Java + Spring (REST API) running on AWS Cloud, involving high throughput file transfer and video transcoding. Main technologies used: Java, Spring, Tomcat, AWS (EC2, SQS, SNS, S3, RDS, SimpleDB), MySQL, Riak, FTP, SFTP, Aspera.</p>
+				</div>
+				<p>
+					<strong>Highlights</strong>
+				</p>
+				<ul class="highlights">
+					<li class="bullet"></li>
+				</ul>
+			</div>
+			<div class="col-sm-12">
+				<h4 class="strike-through">
+					<span>DSNET</span>
+					<span class="date">
+						December 2003 — April 2009
+					</span>
+				</h4>
+				<div class="website pull-right">
+					<a href=""></a>
+				</div>
+				<div class="position">
+					Web Developer
+				</div>
+				<div class="summary">
+					<p>Web development using several technologies like: PHP (own framework called Barakus, Symfony), MySQL, HTML, CSS, Javascript (Mootools, Prototype.js, jQuery)</p>
+				</div>
+			</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="skills" class="row">
+		<aside class="col-sm-3">
+			<h3>Skills</h3>
+		</aside>
+		<div class="col-sm-9">
+			<div class="row">
+			<div class="col-sm-6">
+				<div class="name">
+					<h4>Web Development</h4>
+				</div>
+				<ul class="keywords">
+					<li>React</li>
+					<li>Redux</li>
+					<li>CSS</li>
+					<li>HTML</li>
+					<li></li>
+					<li>Jest</li>
+					<li>Mocha</li>
+					<li>Javascript</li>
+				</ul>
+			</div>
+			<div class="col-sm-6">
+				<div class="name">
+					<h4>Backend</h4>
+				</div>
+				<ul class="keywords">
+					<li>Java (Spring)</li>
+					<li>Node (Express, Hapi, Serverless)</li>
+					<li>PHP (Symfony)</li>
+				</ul>
+			</div>
+			<div class="col-sm-6">
+				<div class="name">
+					<h4>DevOps</h4>
+				</div>
+				<ul class="keywords">
+					<li>Amazon Web Services (AWS)</li>
+					<li>Ansible</li>
+					<li>Chef</li>
+					<li>Docker + Docker Compose</li>
+					<li>Bash</li>
+				</ul>
+			</div>
+			<div class="col-sm-6">
+				<div class="name">
+					<h4>Mobile Development</h4>
+				</div>
+				<ul class="keywords">
+					<li>React Native</li>
+					<li>Titanium Appcelerator</li>
+				</ul>
+			</div>
+			<div class="col-sm-6">
+				<div class="name">
+					<h4>Conversational Interfaces</h4>
+				</div>
+				<ul class="keywords">
+					<li>BotKit</li>
+					<li>Amazon Lex</li>
+				</ul>
+			</div>
+			<div class="col-sm-6">
+				<div class="name">
+					<h4>Misc</h4>
+				</div>
+				<ul class="keywords">
+					<li>Openlayers</li>
+					<li>Web Scraping</li>
+					<li>Automation, automation &amp; automation</li>
+					<li>Soccer</li>
+				</ul>
+			</div>
+			<div class="col-sm-6">
+				<div class="name">
+					<h4>Databases</h4>
+				</div>
+				<ul class="keywords">
+					<li>MySQL</li>
+					<li>PostgreSQL</li>
+					<li>DynamoDB</li>
+					<li>MongoDB</li>
+				</ul>
+			</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="education" class="row">
+		<aside class="col-sm-3">
+			<h3>Education</h3>
+		</aside>
+		<div class="col-sm-9">
+			<div class="row">
+			<div class="col-sm-12">
+				<h4 class="strike-through">
+					<span>UNCPB</span>
+					<span class="date">
+						December 2000 — December 2011
+					</span>
+				</h4>
+				<div class="area">
+					Software Engineering
+				</div>
+				<div class="studyType">
+					
+				</div>
+			</div>
+			</div>
+		</div>
+	</section>
+
+
+
+
+	<section id="languages" class="row">
+		<aside class="col-sm-3">
+			<h3>Languages</h3>
+		</aside>
+		<div class="col-sm-9">
+			<div class="row">
+			<div class="col-sm-6">
+				<div class="language">
+					<strong>Spanish</strong>
+				</div>
+				<div class="fluency">
+					Native or bilingual
+				</div>
+			</div>
+			<div class="col-sm-6">
+				<div class="language">
+					<strong>English</strong>
+				</div>
+				<div class="fluency">
+					Professional working
+				</div>
+			</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="interests" class="row">
+		<aside class="col-sm-3">
+			<h3>Interests</h3>
+		</aside>
+		<div class="col-sm-9">
+			<div class="row">
+			<div class="col-sm-6">
+				<div class="name">
+					<h4>#React</h4>
+				</div>
+			</div>
+			<div class="col-sm-6">
+				<div class="name">
+					<h4>#AWS</h4>
+				</div>
+			</div>
+			<div class="col-sm-6">
+				<div class="name">
+					<h4>#HTPC</h4>
+				</div>
+			</div>
+			<div class="col-sm-6">
+				<div class="name">
+					<h4>#ReactNative</h4>
+				</div>
+			</div>
+			<div class="col-sm-6">
+				<div class="name">
+					<h4>#Docker</h4>
+				</div>
+			</div>
+			<div class="col-sm-6">
+				<div class="name">
+					<h4>#DistributedSystems</h4>
+				</div>
+			</div>
+			</div>
+		</div>
+	</section>
+
+
+	</div>
+
+	</body>
+</html>

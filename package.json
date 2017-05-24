@@ -1,0 +1,16 @@
+{
+  "name": "resume",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "generate": "hackmyresume BUILD resume.json TO resume.html resume.png resume.yml -t node_modules/jsonresume-theme-eddywashere && html-pdf resume.html resume.pdf"
+  },
+  "dependencies": {
+    "hackmyresume": "1.8.0",
+    "html-pdf": "^2.1.0",
+    "jsonresume-theme-eddywashere": "1.0.1",
+    "phantomjs-prebuilt": "^2.1.14",
+    "resume-cli": "0.4.13"
+  }
+}
