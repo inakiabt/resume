@@ -25,6 +25,10 @@ basics:
       network: Twitter
       username: inakiabt
       url: 'https://twitter.com/inakiabt'
+    -
+      network: Linkedin
+      username: inakiabt
+      url: 'https://www.linkedin.com/in/iabete/'
 work:
   -
     company: Gone
@@ -41,7 +45,7 @@ work:
   -
     company: Techstars
     position: Alumni
-    website: ""
+    website: 'http://www.techstars.com/'
     startDate: '2013-08-01'
     endDate: '2013-10-01'
     summary: 'Gone (former ProductGram) was privileged to be selected as one of 10 teams to participate in Techstars Accelerator Class of 2013'
@@ -50,7 +54,7 @@ work:
   -
     company: 'NXTP Labs'
     position: Alumni
-    website: ""
+    website: 'http://www.nxtplabs.com/'
     startDate: '2013-03-01'
     endDate: '2013-06-01'
     summary: 'ProductGram was selected to be part of the NXTP Labs Class of 2013.'
@@ -58,7 +62,7 @@ work:
   -
     company: ProductGram
     position: 'CTO & Co-founder'
-    website: ""
+    website: 'https://www.bloomberg.com/research/stocks/private/snapshot.asp?privcapid=269356842'
     startDate: '2013-03-01'
     endDate: '2013-09-01'
     summary: 'ProductGram is an app to help users to sell and buy items through social networks (Facebook, Twitter, Instagram). In charge of design, develop and deploy the system from scratch running on AWS. Developing and publishing the mobile app. Also, several integrations with several APIs like: Facebook, Twitter, Paypal and Etsy. Main technologies used: PHP, Titanium Appcelerator, MySQL, Stackmob, AWS (DynamoDB, SNS, SQS, EC2, S3, Opsworks).'
@@ -70,7 +74,7 @@ work:
   -
     company: DevSpark
     position: 'Technical Lead'
-    website: ""
+    website: 'http://www.sparkdigital.com/'
     startDate: '2011-08-01'
     endDate: '2013-03-01'
     summary: 'Technical leader of the frontend team. Helped to build an internal management dashboard from scratch using ExtJS/Sencha for a video transcoding company. Main technologies used: Java, ExtJS/Sencha.'
@@ -79,7 +83,7 @@ work:
   -
     company: DevSpark
     position: DevOps
-    website: ""
+    website: 'http://www.sparkdigital.com/'
     startDate: '2011-08-01'
     endDate: '2011-12-01'
     summary: 'In charge of deploying and setup distributed systems on AWS. Custom tools for ingestion workflows adding output validation at large scale. Main technologies used: Java, SQLite, PHP, AWS (EC2, SQS, RDS)'
@@ -87,7 +91,7 @@ work:
   -
     company: Panvidea
     position: DevOps
-    website: ""
+    website: 'https://en.wikipedia.org/wiki/Panvidea'
     startDate: '2009-01-01'
     endDate: '2011-08-01'
     summary: 'In charge of building deployment tools to deploy and integrate testing, staging and production environments on AWS. Setup of Jenkins (CI) and automatic deployments (CD). Custom ingestion and delivery workflows tools for several clients. Main technologies used: Java, Spring, Tomcat, AWS (EC2, SQS, SNS, S3, RDS), Rightscale, MySQL, Riak, Jenkins.'
@@ -95,7 +99,7 @@ work:
   -
     company: Panvidea
     position: 'Software Engineer'
-    website: ""
+    website: 'https://en.wikipedia.org/wiki/Panvidea'
     startDate: '2008-01-01'
     endDate: '2009-08-01'
     summary: 'Part of the core team in charge of design and architect the Panvidea''s platform from scratch. Develop several distributed components using Java + Spring (REST API) running on AWS Cloud, involving high throughput file transfer and video transcoding. Main technologies used: Java, Spring, Tomcat, AWS (EC2, SQS, SNS, S3, RDS, SimpleDB), MySQL, Riak, FTP, SFTP, Aspera.'
@@ -103,7 +107,7 @@ work:
   -
     company: DSNET
     position: 'Web Developer'
-    website: ""
+    website: 'http://dsnet.com.ar/'
     startDate: '2004-01-01'
     endDate: '2009-05-01'
     summary: 'Web development using several technologies like: PHP (own framework called Barakus, Symfony), MySQL, HTML, CSS, Javascript (Mootools, Prototype.js, jQuery)'
