@@ -2,10 +2,6 @@
 
 set -o errexit
 
-if [ -z "$theme" ]; then
-    theme="stackoverflow" # This will be the default theme if no theme is specified.
-fi
-
 # Sanity check: No pull requests and ensure we're on the master branch
 if [ "$TRAVIS_PULL_REQUEST" != "false" ]; then
     echo "Won't attempt to build on pull requests. Exiting."
@@ -17,10 +13,11 @@ if [ "$TRAVIS_BRANCH" != "master" ]; then
     exit 0
 fi
 
-# Generate the resume as index.html
 sudo npm install
-# resume export index --format html --theme ${theme}
-npm run generate
+# Generate the resume as pdf, png and yml
+npm run generate-pdf
+# Generate the resume as html
+npm run generate-site
 
 # Copy output file and check for changes
 if [ -z "$(git status --porcelain)" ]; then

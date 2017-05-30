@@ -57,3 +57,7 @@ typings/
 # dotenv environment variables file
 .env
 
+resume.pdf*
+resume.html*
+resume.png*
+resume.yml*
