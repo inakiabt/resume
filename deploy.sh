@@ -18,8 +18,9 @@ if [ "$TRAVIS_BRANCH" != "master" ]; then
 fi
 
 # Generate the resume as index.html
-sudo npm install -g jsonresume-theme-${theme}
-resume export index --format html --theme ${theme}
+sudo npm install
+# resume export index --format html --theme ${theme}
+npm run generate
 
 # Copy output file and check for changes
 if [ -z "$(git status --porcelain)" ]; then
@@ -30,14 +31,14 @@ fi
 rm -rf out
 mkdir out
 cd out
-cp ../index.html .
+cp ../resume.* .
 
 # Deploy
 git config --global user.name "Travis-CI"
 git config --global user.email "travis-ci@travis-ci.org"
 
 git init
-git add index.html
+git add .
 git commit -m "Deployed resume to github pages branch through travis-ci."
 git push --force --quiet "https://${GITHUB_TOKEN}@${GH_REF}" master:gh-pages > /dev/null 2>&1
 
