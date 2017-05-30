@@ -32,6 +32,7 @@ rm -rf out
 mkdir out
 cd out
 cp ../resume.* .
+cp ../resume.html index.html
 
 # Deploy
 git config --global user.name "Travis-CI"
