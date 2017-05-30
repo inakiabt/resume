@@ -19,12 +19,6 @@ npm run generate-pdf
 # Generate the resume as html
 npm run generate-site
 
-# Copy output file and check for changes
-if [ -z "$(git status --porcelain)" ]; then
-    echo "No changes to resume. Skipping deployment..."
-    exit 0
-fi
-
 rm -rf out
 mkdir out
 cd out
