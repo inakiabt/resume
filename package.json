@@ -1,18 +1,17 @@
 {
-  "name": "resume",
-  "version": "1.0.0",
-  "main": "index.js",
-  "license": "MIT",
+  "name": "inaki-abete-resume",
+  "version": "2.0.0",
+  "private": true,
+  "type": "module",
   "scripts": {
-    "generate-pdf": "hackmyresume BUILD resume.json TO resume.html resume.png resume.yml -t node_modules/jsonresume-theme-eddywashere && html-pdf resume.html resume.pdf",
-    "generate-site": "resume export index --format html --theme elegant"
+    "build": "node scripts/build.mjs",
+    "build:site": "node scripts/build.mjs --html-only",
+    "check": "node --check scripts/build.mjs"
   },
-  "dependencies": {
-    "hackmyresume": "1.8.0",
-    "html-pdf": "^2.1.0",
-    "jsonresume-theme-eddywashere": "1.0.1",
-    "jsonresume-theme-elegant": "^1.10.2",
-    "jsonresume-theme-elegant-hitesh": "^0.9.10",
-    "phantomjs-prebuilt": "^2.1.14"
+  "devDependencies": {
+    "playwright": "1.63.0"
+  },
+  "engines": {
+    "node": ">=22.12.0"
   }
 }
