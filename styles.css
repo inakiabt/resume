@@ -1,0 +1,79 @@
+:root { color-scheme: light; font-family: Arial, Helvetica, sans-serif; color: #20313f; background: #edf1f3; }
+* { box-sizing: border-box; }
+body { margin: 0; font-size: 15px; line-height: 1.55; }
+main { max-width: 930px; margin: 40px auto; padding: 56px 64px; background: white; border-top: 6px solid #176c73; box-shadow: 0 8px 40px #20313f10; }
+header { padding-bottom: 26px; border-bottom: 1px solid #dbe3e6; }
+.eyebrow { font-size: 11px; letter-spacing: 2px; color: #176c73; font-weight: 700; }
+h1 { font-size: 44px; letter-spacing: -1.7px; line-height: 1.15; margin: 14px 0; }
+.headline { font-size: 19px; margin: 0 0 14px; }
+.contact, nav { display: flex; flex-wrap: wrap; align-items: center; gap: 10px 22px; }
+.contact { font-size: 13px; color: #52646f; }
+nav { margin-top: 16px; font-size: 13px; }
+nav a { display: inline-flex; align-items: center; gap: 6px; }
+a { color: #176c73; text-decoration: none; }
+a:hover { text-decoration: underline; }
+a:focus-visible { outline: 2px solid #176c73; outline-offset: 4px; }
+.download { margin-left: auto; font-weight: 700; }
+section { margin-top: 27px; }
+h2 { color: #176c73; font-size: 12px; text-transform: uppercase; letter-spacing: 1.7px; margin: 0 0 16px; }
+p { margin: 0 0 10px; }
+.job { margin-bottom: 25px; }
+.job-heading { display: flex; justify-content: space-between; align-items: baseline; gap: 14px; }
+h3 { font-size: 19px; margin: 0; }
+.job-heading span { color: #52646f; font-size: 12px; white-space: nowrap; }
+.role { font-weight: 700; margin: 2px 0 6px; font-size: 14px; }
+.description { color: #52646f; font-size: 14px; }
+ul { padding-left: 18px; margin: 8px 0 0; }
+li { margin: 5px 0; }
+.compact { margin-bottom: 14px; }
+.compact h3 { font-size: 15px; }
+.compact .role { font-size: 13px; }
+dl { margin: 0; font-size: 13px; }
+dl div { margin-bottom: 9px; }
+dt { font-weight: 700; }
+dd { margin: 0; color: #52646f; }
+footer { border-top: 1px solid #dbe3e6; padding-top: 16px; margin-top: 22px; font-size: 12px; }
+footer strong { margin-right: 10px; }
+.print-url, .print-only { display: none; }
+@media (max-width: 600px) {
+  main { margin: 0; padding: 30px 23px; }
+  h1 { font-size: 36px; }
+  .headline { font-size: 17px; }
+  .job-heading { display: block; }
+  .download { margin-left: 0; }
+}
+@page { size: A4; margin: 14mm 16mm; }
+@media print {
+  :root { background: white; }
+  body { font-size: 10pt; line-height: 1.4; }
+  main { margin: 0; padding: 0; max-width: none; border: 0; box-shadow: none; }
+  header { padding-bottom: 14px; }
+  h1 { font-size: 31pt; margin: 8px 0; }
+  .headline { font-size: 13pt; }
+  .eyebrow { font-size: 8pt; }
+  .contact, nav { font-size: 9pt; }
+  nav { margin-top: 8px; gap: 15px; }
+  nav a { font-size: 0; }
+  nav svg { display: none; }
+  .print-url { display: inline; font-size: 8pt; }
+  .download { display: none; }
+  section { margin-top: 18px; }
+  h2 { font-size: 9pt; margin-bottom: 10px; }
+  h3 { font-size: 13pt; }
+  .role, .description { font-size: 10pt; }
+  .job { margin-bottom: 17px; break-inside: avoid; }
+  .job-heading span { font-size: 9pt; }
+  li { margin: 4px 0; }
+  .continued { break-before: page; margin-top: 0; }
+  .print-only { display: block; }
+  .compact { margin-bottom: 10px; }
+  .compact h3 { font-size: 11pt; }
+  .compact .role { font-size: 9pt; margin-bottom: 2px; }
+  .compact .description { font-size: 9pt; }
+  dl { font-size: 9pt; }
+  dl div { margin-bottom: 5px; }
+  dt { display: inline; }
+  dt::after { content: ': '; }
+  dd { display: inline; }
+  footer { margin-top: 14px; padding-top: 10px; font-size: 8pt; }
+}
